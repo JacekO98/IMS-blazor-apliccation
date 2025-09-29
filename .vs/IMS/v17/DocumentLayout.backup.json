@@ -1,0 +1,60 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jacuu\\source\\repos\\IMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5E8E1FDE-2AC0-4AF8-9836-EAE480F0E470}|IMS.Use_cases\\IMS.UseCases.csproj|c:\\users\\jacuu\\source\\repos\\ims\\ims.use_cases\\inventories\\addinventoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E8E1FDE-2AC0-4AF8-9836-EAE480F0E470}|IMS.Use_cases\\IMS.UseCases.csproj|solutionrelative:ims.use_cases\\inventories\\addinventoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E8E1FDE-2AC0-4AF8-9836-EAE480F0E470}|IMS.Use_cases\\IMS.UseCases.csproj|c:\\users\\jacuu\\source\\repos\\ims\\ims.use_cases\\inventories\\interfaces\\iaddinventoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E8E1FDE-2AC0-4AF8-9836-EAE480F0E470}|IMS.Use_cases\\IMS.UseCases.csproj|solutionrelative:ims.use_cases\\inventories\\interfaces\\iaddinventoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 295,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IAddInventoryUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\jacuu\\source\\repos\\IMS\\IMS.Use_cases\\Inventories\\interfaces\\IAddInventoryUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.Use_cases\\Inventories\\interfaces\\IAddInventoryUseCase.cs",
+              "ToolTip": "C:\\Users\\jacuu\\source\\repos\\IMS\\IMS.Use_cases\\Inventories\\interfaces\\IAddInventoryUseCase.cs",
+              "RelativeToolTip": "IMS.Use_cases\\Inventories\\interfaces\\IAddInventoryUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T18:25:03.395Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 295,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddInventoryUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\jacuu\\source\\repos\\IMS\\IMS.Use_cases\\Inventories\\AddInventoryUseCase.cs",
+              "RelativeDocumentMoniker": "IMS.Use_cases\\Inventories\\AddInventoryUseCase.cs",
+              "ToolTip": "C:\\Users\\jacuu\\source\\repos\\IMS\\IMS.Use_cases\\Inventories\\AddInventoryUseCase.cs",
+              "RelativeToolTip": "IMS.Use_cases\\Inventories\\AddInventoryUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T18:25:12.022Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

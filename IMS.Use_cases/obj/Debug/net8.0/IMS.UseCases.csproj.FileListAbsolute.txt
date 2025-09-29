@@ -1,0 +1,16 @@
+C:\Users\jacuu\source\repos\IMS\IMS.Use_cases\obj\Debug\net8.0\IMS.UseCases.csproj.AssemblyReference.cache
+C:\Users\jacuu\source\repos\IMS\IMS.Use_cases\obj\Debug\net8.0\IMS.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jacuu\source\repos\IMS\IMS.Use_cases\obj\Debug\net8.0\IMS.UseCases.AssemblyInfoInputs.cache
+C:\Users\jacuu\source\repos\IMS\IMS.Use_cases\obj\Debug\net8.0\IMS.UseCases.AssemblyInfo.cs
+C:\Users\jacuu\source\repos\IMS\IMS.Use_cases\obj\Debug\net8.0\IMS.UseCases.csproj.CoreCompileInputs.cache
+C:\Users\jacuu\source\repos\IMS\IMS.Use_cases\bin\Debug\net8.0\IMS.UseCases.deps.json
+C:\Users\jacuu\source\repos\IMS\IMS.Use_cases\bin\Debug\net8.0\IMS.UseCases.dll
+C:\Users\jacuu\source\repos\IMS\IMS.Use_cases\bin\Debug\net8.0\IMS.UseCases.pdb
+C:\Users\jacuu\source\repos\IMS\IMS.Use_cases\bin\Debug\net8.0\IMS.CoreBusiness.dll
+C:\Users\jacuu\source\repos\IMS\IMS.Use_cases\bin\Debug\net8.0\IMS.CoreBusiness.pdb
+C:\Users\jacuu\source\repos\IMS\IMS.Use_cases\obj\Debug\net8.0\IMS.UseC.984B1879.Up2Date
+C:\Users\jacuu\source\repos\IMS\IMS.Use_cases\obj\Debug\net8.0\IMS.UseCases.dll
+C:\Users\jacuu\source\repos\IMS\IMS.Use_cases\obj\Debug\net8.0\refint\IMS.UseCases.dll
+C:\Users\jacuu\source\repos\IMS\IMS.Use_cases\obj\Debug\net8.0\IMS.UseCases.pdb
+C:\Users\jacuu\source\repos\IMS\IMS.Use_cases\obj\Debug\net8.0\ref\IMS.UseCases.dll
+C:\Users\jacuu\source\repos\IMS\IMS.Use_cases\obj\Debug\net8.0\IMS.UseCases.sourcelink.json
