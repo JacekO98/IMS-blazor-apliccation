@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\jacuu\\source\\repos\\IMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E8E1FDE-2AC0-4AF8-9836-EAE480F0E470}|IMS.Use_cases\\IMS.UseCases.csproj|c:\\users\\jacuu\\source\\repos\\ims\\ims.use_cases\\inventories\\addinventoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E8E1FDE-2AC0-4AF8-9836-EAE480F0E470}|IMS.Use_cases\\IMS.UseCases.csproj|solutionrelative:ims.use_cases\\inventories\\addinventoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C58E6B5A-0FC3-4EA0-B92F-E940514DD932}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\jacuu\\source\\repos\\ims\\ims.webapp\\components\\pages\\inventories\\addinventory.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C58E6B5A-0FC3-4EA0-B92F-E940514DD932}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\pages\\inventories\\addinventory.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E8E1FDE-2AC0-4AF8-9836-EAE480F0E470}|IMS.Use_cases\\IMS.UseCases.csproj|c:\\users\\jacuu\\source\\repos\\ims\\ims.use_cases\\inventories\\interfaces\\iaddinventoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E8E1FDE-2AC0-4AF8-9836-EAE480F0E470}|IMS.Use_cases\\IMS.UseCases.csproj|solutionrelative:ims.use_cases\\inventories\\interfaces\\iaddinventoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C58E6B5A-0FC3-4EA0-B92F-E940514DD932}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\jacuu\\source\\repos\\ims\\ims.webapp\\components\\controls\\inventorylistcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C58E6B5A-0FC3-4EA0-B92F-E940514DD932}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\inventorylistcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,34 +22,28 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IAddInventoryUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\jacuu\\source\\repos\\IMS\\IMS.Use_cases\\Inventories\\interfaces\\IAddInventoryUseCase.cs",
-              "RelativeDocumentMoniker": "IMS.Use_cases\\Inventories\\interfaces\\IAddInventoryUseCase.cs",
-              "ToolTip": "C:\\Users\\jacuu\\source\\repos\\IMS\\IMS.Use_cases\\Inventories\\interfaces\\IAddInventoryUseCase.cs",
-              "RelativeToolTip": "IMS.Use_cases\\Inventories\\interfaces\\IAddInventoryUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-28T18:25:03.395Z",
+              "DocumentIndex": 0,
+              "Title": "AddInventory.razor",
+              "DocumentMoniker": "C:\\Users\\jacuu\\source\\repos\\IMS\\IMS.WebApp\\Components\\Pages\\Inventories\\AddInventory.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Pages\\Inventories\\AddInventory.razor",
+              "ToolTip": "C:\\Users\\jacuu\\source\\repos\\IMS\\IMS.WebApp\\Components\\Pages\\Inventories\\AddInventory.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Pages\\Inventories\\AddInventory.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-04T18:50:06.986Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 295,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AddInventoryUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\jacuu\\source\\repos\\IMS\\IMS.Use_cases\\Inventories\\AddInventoryUseCase.cs",
-              "RelativeDocumentMoniker": "IMS.Use_cases\\Inventories\\AddInventoryUseCase.cs",
-              "ToolTip": "C:\\Users\\jacuu\\source\\repos\\IMS\\IMS.Use_cases\\Inventories\\AddInventoryUseCase.cs",
-              "RelativeToolTip": "IMS.Use_cases\\Inventories\\AddInventoryUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-28T18:25:12.022Z",
+              "DocumentIndex": 1,
+              "Title": "InventoryListComponent.razor",
+              "DocumentMoniker": "C:\\Users\\jacuu\\source\\repos\\IMS\\IMS.WebApp\\Components\\Controls\\InventoryListComponent.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\InventoryListComponent.razor",
+              "ToolTip": "C:\\Users\\jacuu\\source\\repos\\IMS\\IMS.WebApp\\Components\\Controls\\InventoryListComponent.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\InventoryListComponent.razor",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-03T19:06:20.569Z",
               "EditorCaption": ""
             }
           ]

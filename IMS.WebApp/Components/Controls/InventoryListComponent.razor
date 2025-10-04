@@ -1,5 +1,5 @@
 ﻿@inject IViewInventoriesByNameUseCase ViewInventoriesByNameUseCase
-
+@* Po wstrzyknięciu możesz wywoływać metody tej usługi w @code (np. ExecuteAsync())*@
 
 
 <table class ="table">
@@ -13,10 +13,13 @@
     </thead>
     <tbody>
         @if (inventories is not null && inventories.Count > 0)
+        @* to "inventories" odnosnik do obiektu który jest stworzony poniżej w @code*@
         {
             foreach (var inv in inventories)
+            @*iteruje po obiektach w liście inventories*@
             {
                 <InventoryListItemComponent Inventory="inv"></InventoryListItemComponent>
+                @*przekazuje tag InventoryListItemComponent z parametrem Inventory="inv" ale nie wiem po co ten parametr  *@
             }
         }
     </tbody>
@@ -25,10 +28,15 @@
 
 @code {
     private List<Inventory>? inventories;
-
+    @*W skrócie: inventories to lista danych, która będzie wypełniona dopiero później.*@
+    @*? oznacza, że zmienna może być null, czyli początkowo nie ma wartości..*@
     protected override async Task OnInitializedAsync()
+    @*tego nie rozumiem*@
     {
         inventories = (await ViewInventoriesByNameUseCase.ExecuteAsync()).ToList();
+        @*ViewInventoriesByNameUseCase.ExecuteAsync() → wywołujesz metodę serwisu, która zwraca dane*@
+        @*await → mówisz: poczekaj, aż te dane się pobiorą, ale nie blokuj aplikacji (UI nadal działa)*@
+        @*( ... ).ToList() → wynik (np. IEnumerable<Inventory>) zamieniasz na zwykłą listę (List<Inventory>).*@
     }
 
 }

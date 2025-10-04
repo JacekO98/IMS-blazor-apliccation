@@ -1,11 +1,16 @@
 ﻿@page "/inventories" 
 @* tu jest odniesienie pośrednie działa tylko do plików w tym samym projekcie*@
-
+@* czyli jak będę chciał ten plik gdzieś dodać do przez ten skrót*@
 <h3>Inventory List</h3>
 <br/>
 <br />
-
+@* powyżej to nagłówek strony*@
 <InventoryListComponent></InventoryListComponent>
+@* To wstawienie komponentu Blazor o nazwie InventoryListComponent czyli odnośnika do komponentu tabeli. Wstawiam to jako własny tag*@
+<br/>
+<a href="/addinventory" class="btn btn-primary">Add Inventory</a>
+@* Tag <a> w HTML oznacza odnośnik (link). Zawsze ma atrybut href (skrót od hyperlink reference) – czyli adres, pod który prowadzi link*@
+@* btn → sprawia, że element wygląda jak przycisk, a nie zwykły link. btn-primary → daje mu styl „głównego przycisku” (zazwyczaj niebieski). *@
 @code {
 
     
