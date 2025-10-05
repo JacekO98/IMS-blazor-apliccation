@@ -21,16 +21,21 @@ namespace IMS.Plugins.InMemory
         }
 
         public Task AddInventoryAsync(Inventory inventory)
+        ///Task to obiekt w C#, który reprezentuje trwające (lub przyszłe) zadanie — coś, co wykonuje się asynchronicznie, czyli w tle.
         {
             if (_inventories.Any(x => x.InventoryName.Equals(inventory.InventoryName, StringComparison.OrdinalIgnoreCase))) 
             { return Task.CompletedTask; }
-
+            ///Any() to metoda LINQ Zwraca true albo false
+            ///x => x to wyrażenie to lambda tak samo jak w pythonie
+            ///Ordinal oznacza, że porównanie odbywa się na podstawie kodów znaków (szybkie porównanie binarne). IgnoreCase oznacza, że ignoruje wielkość liter.
+            ///return Task.CompletedTask - oznacza „Zakończ metodę natychmiast — nie rób już nic więcej.”(czyli nie dodawaj nowego elementu do listy).
             var maxId = _inventories.Max(x => x.InventoryId);
+            /// Sprawdzam największy ID jakie obecnie wystepuje
             inventory.InventoryId = maxId + 1;
-
+            /// dodaje do największego Id 1 i je nadaje nowemu recordowi
             _inventories.Add(inventory);
 
-            _inventories.Add(inventory);
+            
             return Task.CompletedTask;
         }
 

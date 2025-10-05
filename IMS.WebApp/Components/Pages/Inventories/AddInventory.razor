@@ -1,36 +1,50 @@
 ﻿@page "/addinventory"
+
+@inject IAddInventoryUseCase AddInventoryUseCase
 <h3>AddInventory</h3>
 <br/>
-<EditForm Model ="inventory" FormName="formInventory">
-    @* nie wiem co dzieje się powyżej*@
+<EditForm Model ="inventory" FormName="formInventory" OnValidSubmit="Save">
+    @* EditForm to komponent Blazora który tworzy formularz czyli miejsce gdzie użytkownik moze wpisywać dane*@
+    @* Model="inventory" — mówi EditForm, że ma użyć obiektu inventory jako modelu (czyli tego jak formularz ma wyglądać)  formularza. Z tego modelu komponenty wejściowe (np. InputText) mogą odczytywać/powiązywać wartości*@
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+    <ValidationSummary></ValidationSummary>
+
     <div class="form-group">
+        @* form-group — kontener pola formularza.  div grupuje etykietę i pole tekstowe w jeden zestaw.*@
         <label for="name">Inventory Name</label>
+        @* for="name" łączy etykietę z polem input o id="name". Kliknięcie na etykietę ustawia fokus na powiązanym inpucie — ważne dla dostępności (screen readers itp.).*@
         <InputText id="name"
-            @bind-Value="inventory.InventoryName"
-            class="form-control">
+        @bind-Value="inventory.InventoryName"
+        class="form-control">
+            @* form-control — styl wejścia (przyjemny wygląd inputa).*@
         </InputText>
     </div>
 
     <div class="form-group">
         <label for="quantity">Quantity</label>
         <InputNumber id="quantity"
-                   @bind-Value="inventory.Quantity"
-                   class="form-control">
+        @bind-Value="inventory.Quantity"
+        class="form-control">
         </InputNumber>
     </div>
 
     <div class="form-group">
         <label for="price">Price</label>
         <InputNumber id="price"
-                   @bind-Value="inventory.Price"
-                   class="form-control">
+        @bind-Value="inventory.Price"
+        class="form-control">
         </InputNumber>
     </div>
     <br />
-    <button type="submit" class="btn btn-primery">Save</button>
+    <button type="submit" class="btn btn-primary">Save</button>
 
 </EditForm>
 
 @code {
-    private Inventory inventory = new Inventory();
+    [SupplyParameterFromForm]
+    private Inventory inventory { get; set; } = new Inventory();
+    private async Task Save()
+    {
+        AddInventoryUseCase.ExecuteAsync(inventory);
+    }
 }

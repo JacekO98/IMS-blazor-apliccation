@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.5">
   <diagram name="Strona-1" id="gSSp3xcqlCWjID_9G8FG">
-    <mxGraphModel dx="4990" dy="3197" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2215" dy="1845" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -367,6 +367,36 @@
             <mxPoint x="1930" y="1780" as="sourcePoint" />
             <mxPoint x="1980" y="1730" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="08VoQowIVhZlx_lKVz8W-1" value="&lt;b&gt;Tworzymy UseCase w którym:&lt;/b&gt;&lt;br&gt;1. Tworzę UseCase w którym mam metodę wywołującą metodę która będzie zdefiniowana w InventoryRepository i będzie działaniem tego UseCase.&lt;div&gt;2. Tworzę dependencyInjection poprzez stworzenie konstruktora poprzez Ctrl. od razu stworzy się nam kod który tez wygeneruje pole do którego będzie przypisywany obiekt stworzony w konstruktorze z interfejsem.&lt;/div&gt;&lt;div&gt;3. jak już mam To pole z interfejsem, konstruktor i wywołanie metody która jest sercem tego UseCase to poprzez Ctrl. na ciele tej metody stworzę jej interface&lt;/div&gt;&lt;div&gt;4. Poprzez Ctrl. na nazwie klasy tworzę jej interfejs&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3750" y="690" width="300" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="08VoQowIVhZlx_lKVz8W-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="08VoQowIVhZlx_lKVz8W-1" target="08VoQowIVhZlx_lKVz8W-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3590" y="990" as="sourcePoint" />
+            <mxPoint x="3900" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="08VoQowIVhZlx_lKVz8W-3" value="&lt;b&gt;Tworzymy logikę&amp;nbsp;&lt;/b&gt;&lt;b&gt;w pliku&amp;nbsp;&lt;/b&gt;&lt;b&gt;Inventory&amp;nbsp;&lt;/b&gt;&lt;b&gt;metody zapisującą obiekt do bazy.&lt;/b&gt;&lt;div&gt;&lt;b&gt;1. Ctrl. na interfejsie tworzę brakującą metodę i następnie tworzę jej logikę&lt;br&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3750" y="900" width="300" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="08VoQowIVhZlx_lKVz8W-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="08VoQowIVhZlx_lKVz8W-3" target="08VoQowIVhZlx_lKVz8W-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3590" y="990" as="sourcePoint" />
+            <mxPoint x="3900" y="1100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="08VoQowIVhZlx_lKVz8W-5" value="&lt;b&gt;Tworzymy połaczenie pomiędzy naszymi plikami a ich interfejsami w programie &quot;Program.CS&quot; uwzględniając jak te połaczenia mają wyglądać i ile trwać&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3760" y="1100" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="08VoQowIVhZlx_lKVz8W-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="08VoQowIVhZlx_lKVz8W-5" target="08VoQowIVhZlx_lKVz8W-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3900" y="1170" as="sourcePoint" />
+            <mxPoint x="3900" y="1260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="08VoQowIVhZlx_lKVz8W-7" value="&lt;b&gt;Tworzymy poprzez &quot;Ctrl.&quot; interface UseCase w tym wypadku &quot;VievInventoriesByNameUsecase&quot; w którym powinna być wpisana metoda której ten interfejs może używać i tworzę pomiezy nimi połaćzenie w &quot;Program.cs&quot;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3760" y="1260" width="280" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
