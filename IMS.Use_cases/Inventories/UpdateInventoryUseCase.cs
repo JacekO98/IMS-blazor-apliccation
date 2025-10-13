@@ -9,7 +9,7 @@ using IMS.UseCases.PluginInterfaces;
 
 namespace IMS.UseCases.Inventories
 {
-    internal class UpdateInventoryUseCase : IUpdateInventoryUseCase
+    public class UpdateInventoryUseCase : IUpdateInventoryUseCase
     {
         private readonly IInventoryRepository inventoryRepository;
 
