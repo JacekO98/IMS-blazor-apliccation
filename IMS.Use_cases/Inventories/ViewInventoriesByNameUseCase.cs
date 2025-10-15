@@ -33,7 +33,7 @@ namespace IMS.UseCases.Inventories
 
        
 
-        ///Poniżej metoda która odpowiada za wyszukiwanie obiektów po nazwie
+        ///Poniżej metoda która odpowiada za wyszukiwanie obiektów po nazwie. Task to typ który jest zwracany w przypadku funkcji asynchronicznych
         public async Task<IEnumerable<Inventory>> ExecuteAsync(string name = "")
         {
             return await inventoryRepository.GetInventoriesByNameAsync(name);
