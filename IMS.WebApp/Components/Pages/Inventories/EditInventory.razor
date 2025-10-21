@@ -1,0 +1,67 @@
+﻿@page "/editinventory/{invId:int}"
+@*Powyższy rout parameter {invId:int} bierze się z pliku InventoryListItemComponent @Inventory.InventoryId *@
+@inject IViewInventoryByIdUseCase ViewInventoryByIdUseCase
+@inject IEditInventoryUseCase EditInventoryUseCase
+@inject NavigationManager NavigationManager
+<h3>EditInventory</h3>
+<br/>
+@if (this.inventory is not null){
+    <EditForm Model="inventory" FormName="formInventory" OnValidSubmit="Update">
+        @* EditForm to komponent Blazora który tworzy formularz czyli miejsce gdzie użytkownik moze wpisywać dane*@
+        @* Model="inventory" — mówi EditForm, że ma użyć obiektu inventory jako modelu (czyli tego jak formularz ma wyglądać)  formularza. Z tego modelu komponenty wejściowe (np. InputText) mogą odczytywać/powiązywać wartości*@
+        <DataAnnotationsValidator></DataAnnotationsValidator>
+        <ValidationSummary></ValidationSummary>
+        <InputNumber @bind-Value="inventory.InventoryId" hidden></InputNumber>
+        <div class="form-group">
+            @* form-group — kontener pola formularza.  div grupuje etykietę i pole tekstowe w jeden zestaw.*@
+            <label for="name">Inventory Name</label>
+            @* for="name" łączy etykietę z polem input o id="name". Kliknięcie na etykietę ustawia fokus na powiązanym inpucie — ważne dla dostępności (screen readers itp.).*@
+            <InputText id="name"
+            @bind-Value="inventory.InventoryName"
+            class="form-control">
+                @* form-control — styl wejścia (przyjemny wygląd inputa).*@
+            </InputText>
+        </div>
+
+        <div class="form-group">
+            <label for="quantity">Quantity</label>
+            <InputNumber id="quantity"
+            @bind-Value="inventory.Quantity"
+            class="form-control">
+            </InputNumber>
+        </div>
+
+        <div class="form-group">
+            <label for="price">Price</label>
+            <InputNumber id="price"
+            @bind-Value="inventory.Price"
+            class="form-control">
+            </InputNumber>
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Update</button>
+        &nbsp;
+        <a href="/inventories" class="btn btn-primary">Cancel</a>
+
+    </EditForm>
+}
+
+
+@code {
+    [Parameter]
+    public int InvId {get; set; }
+    [SupplyParameterFromForm]
+    private Inventory inventory { get; set; }
+    protected override async Task OnParametersSetAsync(){
+        this.inventory ??= await ViewInventoryByIdUseCase.ExecuteAsync(this.InvId);
+    }
+    private async Task Update(){
+        if (inventory is not null){
+            await EditInventoryUseCase.ExecuteAsync(inventory);
+            NavigationManager.NavigateTo("/inventories");
+
+        }
+        
+    }
+
+}

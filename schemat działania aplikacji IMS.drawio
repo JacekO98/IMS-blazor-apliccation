@@ -395,7 +395,7 @@
             <mxPoint x="3900" y="1260" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="08VoQowIVhZlx_lKVz8W-7" value="&lt;b&gt;Tworzymy poprzez &quot;Ctrl.&quot; interface UseCase w tym wypadku &quot;VievInventoriesByNameUsecase&quot; w którym powinna być wpisana metoda której ten interfejs może używać i tworzę pomiezy nimi połaćzenie w &quot;Program.cs&quot;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="08VoQowIVhZlx_lKVz8W-7" value="&lt;b&gt;tworzę komponenty strony uwzględniając ich rozbicie&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="3760" y="1260" width="280" height="90" as="geometry" />
         </mxCell>
       </root>

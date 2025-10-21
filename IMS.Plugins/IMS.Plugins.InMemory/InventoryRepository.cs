@@ -44,5 +44,29 @@ namespace IMS.Plugins.InMemory
             if (string.IsNullOrEmpty(name)) return await Task.FromResult(_inventories);
             return _inventories.Where(x => x.InventoryName.Contains(name, StringComparison.OrdinalIgnoreCase));
         }
+
+        public async Task<Inventory> GetInventoryByIdAsync(int inventoryId)
+        {
+            return await Task.FromResult(_inventories.First(x => x.InventoryId == inventoryId));
+            
+        }
+
+
+        ///pomysł na poniższą funkcję to znaleźć obiekt o tym samym Id a następnie go podmienić. <summary>
+        /// pomysł na poniższą funkcję to znaleźć obiekt o tym samym Id a następnie go podmienić.
+
+        ///Można to zrobić za pomocą indexu już istniejącego obiektu na liście
+        ///W kursie gość zrobił trochę inaczej bo podmieniał tylko wartości a nie cały obiekt ale to tez może być dobrze
+        public async Task EditInventoryAsync(Inventory inventory)
+        {
+            ///gość tutaj daje jeszcze warunek zabezpieczający ale na razie ja go nie dodaje
+            var index = _inventories.FindIndex(x => x.InventoryId == inventory.InventoryId);
+            if (index >= 0)
+            {
+                _inventories[index] = inventory;
+            }
+            await Task.CompletedTask;
+
+        }
     }
 }
