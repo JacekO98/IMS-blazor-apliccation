@@ -9,17 +9,17 @@ using IMS.UseCases.PluginInterfaces;
 
 namespace IMS.UseCases.Inventories
 {
-    public class ViewInventoryById : IVievInventoryById
+    public class EditInventoryUseCase : IEditInventoryUseCase
     {
         private readonly IInventoryRepository inventoryRepository;
-        public ViewInventoryById(IInventoryRepository inventoryRepository)
-        {
-            this.inventoryRepository = inventoryRepository;
-        }
-        public async Task<Inventory> ExecuteAsync(int inventoryId)
-        {
-            return await inventoryRepository.GetInventoryByIdAsync(inventoryId);
 
+        public EditInventoryUseCase(IInventoryRepository InventoryRepository)
+        {
+            this.inventoryRepository = InventoryRepository;
+        }
+        public async Task ExecuteAsync(Inventory inventory)
+        {
+            await this.inventoryRepository.EditInventoryAsync(inventory);
         }
     }
 }

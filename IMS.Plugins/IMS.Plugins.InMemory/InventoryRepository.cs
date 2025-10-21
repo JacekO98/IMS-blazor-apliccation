@@ -45,7 +45,7 @@ namespace IMS.Plugins.InMemory
             return _inventories.Where(x => x.InventoryName.Contains(name, StringComparison.OrdinalIgnoreCase));
         }
 
-        public async Task<Inventory> GetInventoryById(int inventoryId)
+        public async Task<Inventory> GetInventoryByIdAsync(int inventoryId)
         {
             return await Task.FromResult(_inventories.First(x => x.InventoryId == inventoryId));
             
@@ -57,7 +57,7 @@ namespace IMS.Plugins.InMemory
 
         ///Można to zrobić za pomocą indexu już istniejącego obiektu na liście
         ///W kursie gość zrobił trochę inaczej bo podmieniał tylko wartości a nie cały obiekt ale to tez może być dobrze
-        public async Task UpdateAsync(Inventory inventory)
+        public async Task EditInventoryAsync(Inventory inventory)
         {
             ///gość tutaj daje jeszcze warunek zabezpieczający ale na razie ja go nie dodaje
             var index = _inventories.FindIndex(x => x.InventoryId == inventory.InventoryId);
