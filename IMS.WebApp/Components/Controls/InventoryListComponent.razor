@@ -30,10 +30,12 @@
     private List<Inventory>? inventories;
     @*W skrócie: inventories to lista danych, która będzie wypełniona dopiero później.*@
     @*? oznacza, że zmienna może być null, czyli początkowo nie ma wartości..*@
+    [Parameter]
+    public string? SearchInventoryFilter { get; set; } 
     protected override async Task OnInitializedAsync()
     @*tego nie rozumiem*@
     {
-        inventories = (await ViewInventoriesByNameUseCase.ExecuteAsync()).ToList();
+        inventories = (await ViewInventoriesByNameUseCase.ExecuteAsync(SearchInventoryFilter??string.Empty)).ToList();
         @*ViewInventoriesByNameUseCase.ExecuteAsync() → wywołujesz metodę serwisu, która zwraca dane*@
         @*await → mówisz: poczekaj, aż te dane się pobiorą, ale nie blokuj aplikacji (UI nadal działa)*@
         @*( ... ).ToList() → wynik (np. IEnumerable<Inventory>) zamieniasz na zwykłą listę (List<Inventory>).*@

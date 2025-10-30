@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\jacuu\\source\\repos\\IMS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C58E6B5A-0FC3-4EA0-B92F-E940514DD932}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\jacuu\\source\\repos\\ims\\ims.webapp\\components\\pages\\inventories\\inventorylist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C58E6B5A-0FC3-4EA0-B92F-E940514DD932}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\pages\\inventories\\inventorylist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C58E6B5A-0FC3-4EA0-B92F-E940514DD932}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\jacuu\\source\\repos\\ims\\ims.webapp\\components\\pages\\inventories\\editinventory.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C58E6B5A-0FC3-4EA0-B92F-E940514DD932}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\pages\\inventories\\editinventory.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C58E6B5A-0FC3-4EA0-B92F-E940514DD932}|IMS.WebApp\\IMS.WebApp.csproj|c:\\users\\jacuu\\source\\repos\\ims\\ims.webapp\\components\\controls\\inventorylistcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C58E6B5A-0FC3-4EA0-B92F-E940514DD932}|IMS.WebApp\\IMS.WebApp.csproj|solutionrelative:ims.webapp\\components\\controls\\inventorylistcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,12 +27,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "InventoryList.razor",
+              "DocumentMoniker": "C:\\Users\\jacuu\\source\\repos\\IMS\\IMS.WebApp\\Components\\Pages\\Inventories\\InventoryList.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Pages\\Inventories\\InventoryList.razor",
+              "ToolTip": "C:\\Users\\jacuu\\source\\repos\\IMS\\IMS.WebApp\\Components\\Pages\\Inventories\\InventoryList.razor*",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Pages\\Inventories\\InventoryList.razor*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T17:53:32.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InventoryListComponent.razor",
+              "DocumentMoniker": "C:\\Users\\jacuu\\source\\repos\\IMS\\IMS.WebApp\\Components\\Controls\\InventoryListComponent.razor",
+              "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Controls\\InventoryListComponent.razor",
+              "ToolTip": "C:\\Users\\jacuu\\source\\repos\\IMS\\IMS.WebApp\\Components\\Controls\\InventoryListComponent.razor",
+              "RelativeToolTip": "IMS.WebApp\\Components\\Controls\\InventoryListComponent.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T17:49:58.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "EditInventory.razor",
               "DocumentMoniker": "C:\\Users\\jacuu\\source\\repos\\IMS\\IMS.WebApp\\Components\\Pages\\Inventories\\EditInventory.razor",
               "RelativeDocumentMoniker": "IMS.WebApp\\Components\\Pages\\Inventories\\EditInventory.razor",
               "ToolTip": "C:\\Users\\jacuu\\source\\repos\\IMS\\IMS.WebApp\\Components\\Pages\\Inventories\\EditInventory.razor",
               "RelativeToolTip": "IMS.WebApp\\Components\\Pages\\Inventories\\EditInventory.razor",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADIAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAAB8AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-19T18:12:09.702Z",
               "EditorCaption": ""

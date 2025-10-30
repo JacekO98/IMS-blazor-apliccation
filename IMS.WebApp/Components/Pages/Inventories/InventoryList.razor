@@ -5,13 +5,29 @@
 <br/>
 <br />
 @* powyżej to nagłówek strony*@
-<InventoryListComponent></InventoryListComponent>
+<EditForm Model="inventoryNameToSearch" FormName="formSearch">
+    <div class="input-group">
+        <InputText
+        class="form-control"
+        placeholder="Type inventory name here to search"
+        @bind-Value="this.inventoryNameToSearch">
+        </InputText>
+        <button type="submit" class="btn-success">Search</button>
+    </div>
+</EditForm>
+
+
+
+@* To wstawienie komponentu Blazor o nazwie InventorysearchBar czyli odnośnika do komponentu paska wyszukiwania. Wstawiam to jako własny tag*@
+<InventoryListComponent SearchInventoryFilter="@inventoryNameToSearch"></InventoryListComponent>
 @* To wstawienie komponentu Blazor o nazwie InventoryListComponent czyli odnośnika do komponentu tabeli. Wstawiam to jako własny tag*@
 <br/>
 <a href="/addinventory" class="btn btn-primary">Add Inventory</a>
 @* Tag <a> w HTML oznacza odnośnik (link). Zawsze ma atrybut href (skrót od hyperlink reference) – czyli adres, pod który prowadzi link*@
 @* btn → sprawia, że element wygląda jak przycisk, a nie zwykły link. btn-primary → daje mu styl „głównego przycisku” (zazwyczaj niebieski). *@
-@code {
 
-    
+@code {
+    [SupplyParameterFromForm]
+    private string inventoryNameToSearch { get; set; } = string.Empty;
+
 }
