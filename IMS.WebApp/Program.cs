@@ -21,6 +21,7 @@ builder.Services.AddTransient<IAddInventoryUseCase, AddInventoryUseCase>();
 
 builder.Services.AddSingleton<IEditInventoryUseCase, EditInventoryUseCase>();
 builder.Services.AddTransient<IViewInventoryByIdUseCase, ViewInventoryByIdUseCase>();
+builder.Services.AddTransient<IDeleteInventoryUseCase, DeleteInventoryUseCase>();
 
 var app = builder.Build();
 
