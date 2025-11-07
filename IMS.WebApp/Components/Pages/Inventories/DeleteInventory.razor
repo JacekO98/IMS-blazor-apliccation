@@ -1,6 +1,26 @@
 ﻿@page "/deleteinventory/{invId:int}"
+@inject NavigationManager NavigationManager
+@inject IViewInventoryByIdUseCase ViewInventoryByIdUseCase
+@inject IDeleteInventoryUseCase DeleteInventoryUseCase
 <h3>DeleteInventory</h3>
+<h2>Do you want to delet this inventory for sure?</h2>
+<EditForm Model ="inventory" FormName="DeleteInventory" OnValidSubmit="Yes">
+    <button type="submit" class="btn btn-danger">Yes</button>
+    <a href="/inventories" class="btn btn-success">No</a>
+</EditForm>
 
 @code {
+    [Parameter]
+    public int InvId { get; set; }
+    [SupplyParameterFromForm]
+    private Inventory inventory { get; set; }
+    protected override async Task OnParametersSetAsync()
+    {
+        this.inventory ??= await ViewInventoryByIdUseCase.ExecuteAsync(this.InvId);
+    }
+    private async Task Yes(){
+        await DeleteInventoryUseCase.ExecuteAsync(inventory);
+        NavigationManager.NavigateTo("/inventories");
+    }
 
 }
