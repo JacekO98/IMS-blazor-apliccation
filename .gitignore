@@ -1,2 +1,13 @@
 .vs/
-.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.dll
+*.pdb
+*.dbmdl
+*.log
+*.vscode/
+launchSettings.json
+
